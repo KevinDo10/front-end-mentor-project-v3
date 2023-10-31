@@ -1,0 +1,73 @@
+:root {
+    --primary: #D87D4A;
+    --secondary: #101010;
+    --tertiary: #F1F1F1;
+    --quaternary: #FAFAFA;
+    --primary-lighter: #fbaf85;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+.inner-container {
+    max-width: 1110px;
+    height: 100%;
+    margin: 0 auto;
+}
+.out-container {
+    background-color: #191919;
+    height: 728px;
+}
+.hero-banner-section {
+    background-image: url("assets/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+    border-bottom: 1px solid rgb(151 151 151 / 10%);
+    align-items: center;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) {
+}
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+    .hero-banner-section {
+        background-image: url("assets/image-hero.jpg");
+    }
+    header {
+        justify-content: flex-start;
+        gap: 42px;
+    }
+    header .checkout-btn {
+        margin-left: auto;
+    }
+}
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+}
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+    .hero-banner-section {
+        background-image: url("assets/image-hero.jpg");
+    }
+}
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
+}
